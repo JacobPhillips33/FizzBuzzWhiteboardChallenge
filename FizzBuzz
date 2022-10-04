@@ -1,0 +1,37 @@
+// If this were a real interview whiteboard challenge, I would ask to clarify these points. Since there is nobody to ask, I will make some assumptions.
+// Assumptions: 1. The input number will be an integer.
+//                 If a different number type such as a double was specified after clarifying, I would adjust the code to match. Ex: "double num".
+//              2. Whether this method should be static and belong to the class or not static and belong to each instance/object was not specified.
+//                 I assumed the method was meant to be static so it can be called by the class itself rather than each instance.
+//                 If the method was supposed to belong to each object/instance of the class rather than the class itself, I would remove "static".
+//              3. They didn't specify what they would like to have returned, but a string will be required so as to not throw an error.
+//                 I would ask what string response they wanted to return if the number is not divisible by 3 or 5.
+//                 Given I had nobody to ask, I placed "Nope" in for my response but could easily change it to match their specifications.
+
+public static string FizzBuzz(int num)
+{
+    if(num % 3 == 0 && num % 5 == 0)
+    {
+        return "FizzBuzz";
+    }
+    else if (num % 3 == 0)
+    {
+        return "Fizz";
+    }
+    else if (num % 5 == 0)
+    {
+        return "Buzz";
+    }
+    else
+    {
+        return "Nope";
+    }
+}
+    
+
+
+
+
+
+
+
